@@ -1,0 +1,8 @@
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+  .swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: black; /* Change color on hover */
+}

@@ -1,0 +1,132 @@
+div.container {
+  /* font-family: Raleway; */
+  color: #fff;
+  margin: 20px auto;
+  width: 83%;
+  /* padding: 0em 1em; */
+  border-radius: 60px;
+  align-items: center;
+  border: none;
+}
+
+div.container a {
+  font-size: small;
+  color: #fff;
+  text-decoration: none;
+  margin: 0px 3px;
+  padding: 5px 7px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+div.topBotomBordersOut a:before,
+div.topBotomBordersOut a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: #37ef04;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+div.topBotomBordersOut a:before {
+  top: 0px;
+  transform: translateY(10px);
+}
+
+div.topBotomBordersOut a:after {
+  bottom: 0px;
+  transform: translateY(-10px);
+}
+
+div.topBotomBordersOut a:hover:before,
+div.topBotomBordersOut a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.vl {
+  border-left: 1px solid rgb(52, 52, 52);
+  height: 40px;
+}
+
+.Loop {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #cbcbcb;
+}
+
+.search-container {
+  background: border-gray-500;
+  height: 30px;
+  border-radius: 30px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
+}
+.search-container:hover {
+  transition: background 1s;
+  background: #ddd; 
+}
+
+.search-container:hover > .search-input {
+  width: 100px;
+  right: 0;
+}
+
+.search-container .search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 0px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: width 0.8s, left 0.8s;
+  color: rgb(18, 18, 18);
+}
+
+.search-container .search-btn .fas {
+  color: #ececec;
+}
+
+
+.value-15 span::before {
+    content: '15';
+  }
+  
+  .value-10 span::before {
+    content: '10';
+  }
+  
+.value-24 span::before {
+    content: '24';
+  }
+  
+  .value-18 span::before {
+    content: '18';
+  }
+  
+  
+/*   
+  .value-24 {
+    --value: 24;
+  }
+  
+  .value-18 {
+    --value: 18;
+  } */
+
+
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms;
+  }
+
